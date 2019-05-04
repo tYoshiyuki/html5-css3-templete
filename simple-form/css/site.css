@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/*--- site-common ---*/
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+input, textarea {
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    border: 1px solid #cccccc;
+    margin: 8px 0;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    background-color: #e3f2fd;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 48px;
+    font-size: 16px;
+    background:  #03a9f4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"].cancel:hover,
+input[type="button"].cancel:focus {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 4px 2px -1px rgba(0,0,0,0.2);
+}
+
+input[type="button"].cancel {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 48px;
+    font-size: 16px;
+    background:  white;
+    color: #666666;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    padding-left: 20px;
+    position:relative;
+    margin-right: 20px;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #999;
+    border-radius: 50%;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    color: #03a9f4;
+}
+
+input[type="radio"]:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 11px;
+    height: 11px;
+    background: #03a9f4;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    width: 7px;
+    height: 14px;
+    transform: rotate(40deg);
+    border-bottom: 3px solid #03a9f4;
+    border-right: 3px solid #03a9f4;
+}
+
+.input-group {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.input-group li {
+    display: inline;
+}
+
+.required {
+    padding: 0.5em;
+    font-size: 0.75em;
+    color: #ff0000;
+}
+
+.main-inner {
+    padding: 1em;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+}
+
+.button-group p {
+    display: block;
+    padding: 16px;
+}
