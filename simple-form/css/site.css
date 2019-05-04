@@ -9,6 +9,12 @@ body {
     margin: 0;
 }
 
+.container {
+    margin: 0 auto 0 auto;
+    padding: 0 16px 0 16px;
+    max-width: 1000px;
+}
+
 input, textarea {
     box-sizing: border-box;
 }
@@ -133,6 +139,17 @@ input[type="checkbox"]:checked + label::after {
     border-right: 3px solid #03a9f4;
 }
 
+.required {
+    padding: 0.5em;
+    font-size: 0.75em;
+    color: #ff0000;
+}
+
+/*--- main ---*/
+.main-inner {
+    padding: 1em;
+}
+
 .input-group {
     margin: 0;
     padding: 0;
@@ -141,16 +158,6 @@ input[type="checkbox"]:checked + label::after {
 
 .input-group li {
     display: inline;
-}
-
-.required {
-    padding: 0.5em;
-    font-size: 0.75em;
-    color: #ff0000;
-}
-
-.main-inner {
-    padding: 1em;
 }
 
 .button-group {
