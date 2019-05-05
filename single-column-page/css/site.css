@@ -90,12 +90,13 @@ footer {
 }
 
 .main-inner-wrapper {
-    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .main-inner-item {
-    float: left;
-    margin: 8px 0 8px 8px;
+    margin: 8px;
     border: 1px solid #cccccc;
     padding: 8px;
     background: white;
